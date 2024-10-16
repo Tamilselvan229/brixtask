@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="train.html">Train Search</a></li>
+                <li><a href="admin-dashboard.html">Ticket Availability</a></li>
+                <li><a href="pnr.html">PNR Status</a></li>
+                <li><a href="admin.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+    <section class="train-search">
+        <h2>Search Trains</h2>
+        <form id="trainForm">
+            <label for="source">Source Station:</label>
+            <input type="text" id="source" placeholder="Enter source station" required>
+
+            <label for="destination">Destination Station:</label>
+            <input type="text" id="destination" placeholder="Enter destination station" required>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Find Trains</button>
+        </form>
+
+        <div id="trainResults"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
