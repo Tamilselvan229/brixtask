@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="styles.css">
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="train.html">Train Search</a></li>
+            <li><a href="admin-dashboard.html">Ticket Availability</a></li>
+            <li><a href="pnr.html">PNR Status</a></li>
+            <li><a href="admin.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="pnr">
+    <h2>Check PNR Status</h2>
+    <form id="pnrForm">
+        <label for="pnrNumber">PNR Number:</label>
+        <div id ="selva">
+            <input type="text" id="pnrNumber" placeholder="Enter PNR number" required>
+        </div>
+       
+
+        <button type="submit">Check Status</button>
+    </form>
+    <div id="pnrResults"></div>
+</section>
